@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-impo
+import on1 from "/Onboarding 1.png";
+import on2 from "/Onboarding 2.png";
+import on3 from "/Onboarding 3.png";
 import activeBtn from "../assets/Images/active.jpg";
 import inActiveBtn from "../assets/Images/inactive.jpg";
 import { FiArrowRight } from "react-icons/fi";
@@ -10,7 +12,7 @@ const OnboardCarousel = ({ darkMode }) => {
   const onboardObjects = [
     {
       id: 1,
-      image: "/Onboarding 1.png",
+      image: on1,
       heading1: "Gateway to Your",
       heading2: "Adventure",
       description1: "Enjoy various housing options, from",
@@ -19,7 +21,7 @@ const OnboardCarousel = ({ darkMode }) => {
 
     {
       id: 2,
-      image: "/Onboarding 2.png",
+      image: on2,
       heading1: "Discover the Wonders of",
       heading2: "the World: Let's Explore!",
       description1: "Book a stay wherever you are, whenever",
@@ -28,7 +30,7 @@ const OnboardCarousel = ({ darkMode }) => {
 
     {
       id: 3,
-      image: "/Onboarding 3.png",
+      image: on3,
       heading1: "The Right Solution for Your",
       heading2: "Holiday Accommodation",
       description1: "A stress-free Holiday? Trust your Holiday",
