@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+@import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
+@import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+#root {
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: start;
+  font-family: "Manrope", sans-serif;
+}
+
+.tidoy {
+  background-image: url(./assets/Images/tidoy-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* Hide scrollbar but keep scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* For Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+.react-calendar__navigation__label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2d2e2e;
+}
+
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #8a8a8a;
+  text-align: center;
+}
+
+.react-calendar__tile {
+  padding: 0.5rem 0;
+  border-radius: 999px;
+  text-align: center;
+  font-weight: 500;
+  color: #2d2e2e;
+  transition: background 0.1s ease;
+}
+
+.react-calendar__tile:enabled:hover {
+  background-color: #f3f3f3;
+}
+
+.react-calendar__tile--active {
+  background-color: #ff9a01 !important;
+  color: white !important;
+}
+
+.react-calendar__tile--now {
+  background: #fbe8cb !important;
+  color: #2d2e2e;
+}
